@@ -6,8 +6,8 @@ export default async function Home() {
 	const projects = await getProjects();
 
 	return (
-		<div className="mx-auto max-w-7xl py-20">
-			<h1 className="text-6xl font-extrabold">
+		<div>
+			<h1 className="text-6xl font-extrabold text-slate-700">
 				Hey there, I&apos;m{" "}
 				<span className="bg-gradient-to-r from-red-500 to-violet-500 bg-clip-text text-transparent">
 					Chetan!
@@ -23,7 +23,7 @@ export default async function Home() {
 				{projects?.map((project) => (
 					<Link
 						href={`/projects/${project.slug}`}
-						className="rounded-lg border-2 border-slate-400 p-4 shadow-md transition hover:border-blue-400 hover:shadow-xl"
+						className="rounded-lg border-2 border-slate-200 p-4 shadow-md transition hover:border-blue-400 hover:shadow-xl"
 						key={project._id}
 					>
 						{project.image && (

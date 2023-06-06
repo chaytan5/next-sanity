@@ -12,10 +12,7 @@ export async function getProjects(): Promise<Project[]> {
       "image": image.asset->url,
       url,
       content
-    }`,
-		{
-			next: { tags: ["project"] },
-		}
+    }`
 	);
 }
 
